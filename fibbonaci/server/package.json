@@ -4,7 +4,8 @@
         "express": "^4.17.1",
         "nodemon": "^2.0.4",
         "pg": "^8.2.0",
-        "redis": "^3.0.2"
+        "redis": "^3.0.2",
+        "body-parser": "*"
     },
     "scripts": {
         "start": "node index.js",
