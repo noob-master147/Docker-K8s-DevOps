@@ -56,7 +56,12 @@
 
 # Step 4
 ## Configure NginX Server
+
 <br>
 
 ![Flow](./images/p7.png)
 
+<br>
+
+- we will make a conter for nginx server
+- Incluse the nginx service in the docker-compose.yml
