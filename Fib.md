@@ -49,4 +49,14 @@
         - React
 
 ### The Nginx server will get all the req, and decide which backend service to route to.
-![Flow](./images/p6.png)
+![Nginx Server Flow](./images/p6.png)
+
+<br>
+<br>
+
+# Step 4
+## Configure NginX Server
+<br>
+
+![Flow](./images/p7.png)
+
