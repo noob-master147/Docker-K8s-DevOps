@@ -64,4 +64,25 @@
 <br>
 
 - we will make a conter for nginx server
-- Incluse the nginx service in the docker-compose.yml
+- Include and configure the nginx service in the docker-compose.yml
+- ```sudo docker-compose up --build```
+- The React app will be available att localhost:3050
+
+<br>
+<br>
+
+# Step 5
+## Open WebSockets
+
+<br>
+
+![Flow](./images/p8.png)
+
+### To open Web Socket, add this in nginx default.config file
+
+    location /sockjs-node {
+        proxy_pass http://client;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "Upgrade";
+    }
