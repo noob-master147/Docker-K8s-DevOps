@@ -6,12 +6,14 @@
 
 <br>
 
-This repository contains the code I wrote while learning DevOps.
+## This repository contains the code I wrote while learning DevOps.
 The Course i am following is available [here](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/)
 
 <br>
 <br>
 
-This repo is essentially my notes I made while following this course
+### This repo is essentially my notes I made while following this course.
 
-Notes for [Multiple Container Application](./Fib.md)
+## NOTES
+- Notes for [Multiple Container Application](./Fib.md)
+- Notes for [Continuous Integration Workflow for Multiple Images](./CI.md)
