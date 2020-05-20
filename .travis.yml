@@ -9,10 +9,10 @@ script:
     - docker run noobmaster147/react-test npm test -- --coverage
 
 after_success:
-    - docker built - noobmaster147/multi-client ./client
-    - docker built - noobmaster147/multi-nginx ./nginx
-    - docker built - noobmaster147/multi-server ./server
-    - docker built - noobmaster147/multi-worker ./worker
+    - docker build -t noobmaster147/multi-client ./client
+    - docker build -t noobmaster147/multi-nginx ./nginx
+    - docker build -t noobmaster147/multi-server ./server
+    - docker build -t noobmaster147/multi-worker ./worker
     # Login to Docker CLI
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
     # Push to DockerHub
