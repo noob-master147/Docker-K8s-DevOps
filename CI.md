@@ -43,3 +43,13 @@
 
 **Links**
 ![Links](./images/c5.png)
+
+
+<br>
+<br>
+
+# Production Architecture
+![Production](./images/c6.png)
+
+## AWS Elastic Cache
+![AWS Elastic Cache](./images/c7.png)
