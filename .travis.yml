@@ -14,7 +14,7 @@ after_success:
     - docker built - noobmaster147/multi-server ./server
     - docker built - noobmaster147/multi-worker ./worker
     # Login to Docker CLI
-    - echo "$DOCKER_PASS" | docker login -u "$DOCKER_ID" --password-stdin
+    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
     # Push to DockerHub
     - docker push noobmaster147/multi-client
     - docker push noobmaster147/multi-server
