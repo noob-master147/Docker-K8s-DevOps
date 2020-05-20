@@ -16,11 +16,13 @@ How this setup is different from thr previous is that this time Travis CI will b
 ## Step2
 ### Setup Prod Docker Files for Server and Client
 ![Flow](./images/c1.png)
+
 <br>
 <br>
 
 ## Step3
 ### Set up Travis CI to GitHub Repository
+![Travis Flow](./images/c2.png)
 
 <br>
 <br>

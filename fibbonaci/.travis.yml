@@ -1,0 +1,22 @@
+sudo: required
+services:
+    - docker
+
+before_install:
+    - docker build -t noobmaster147/react-test -f ./client/Dockerfile.dev ./client
+
+script:
+    - docker run noobmaster147/react-rest npm test -- --coverage
+
+after_success:
+    - docker built - noobmaster147/multi-client ./client
+    - docker built - noobmaster147/multi-nginx ./nginx
+    - docker built - noobmaster147/multi-server ./server
+    - docker built - noobmaster147/multi-worker ./worker
+    # Login to Docker CLI
+    - echo "$DOCKER_PASS" | docker login -u "$DOCKER_ID" --password-stdin
+    # Push to DockerHub
+    - docker push noobmaster147/multi-client
+    - docker push noobmaster147/multi-server
+    - docker push noobmaster147/multi-nginx
+    - docker push noobmaster147/multi-worker
