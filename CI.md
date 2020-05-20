@@ -15,7 +15,7 @@ How this setup is different from thr previous is that this time Travis CI will b
 
 ## Step2
 ### Setup Prod Docker Files
-
+![Flow](./images/c1.png)
 <br>
 <br>
 
